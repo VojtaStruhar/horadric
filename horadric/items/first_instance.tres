@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://bra4uaepwr22"]
+
+[ext_resource type="Script" path="res://horadric/item.gd" id="1_yopj1"]
+
+[resource]
+script = ExtResource("1_yopj1")
+attribute = "tralala"
+count = 1

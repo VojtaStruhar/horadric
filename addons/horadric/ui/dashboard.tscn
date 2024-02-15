@@ -51,6 +51,10 @@ text = "Save"
 layout_mode = 2
 text = "Reload"
 
+[node name="Test" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/Header"]
+layout_mode = 2
+text = "Test Resource Preview"
+
 [node name="Inspector" type="SplitContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -108,3 +112,4 @@ text = "The almighty Horadric plugin!"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/Header/SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/Header/ReloadButton" to="." method="_on_reload_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/Header/Test" to="." method="_on_test_pressed"]

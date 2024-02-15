@@ -14,3 +14,10 @@ func _on_save_button_pressed() -> void:
 
 func _on_reload_button_pressed() -> void:
 	Horadric.reload_structure()
+
+
+func _on_test_pressed() -> void:
+	var inspector = EditorInspector.new()
+	print(inspector)
+	var edited_object = inspector.get_edited_object()
+	print(edited_object)
