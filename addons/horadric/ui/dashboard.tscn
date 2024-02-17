@@ -63,26 +63,14 @@ size_flags_vertical = 3
 custom_minimum_size = Vector2(300, 2.08165e-12)
 layout_mode = 2
 
-[node name="ColorRect" type="ColorRect" parent="MarginContainer/VBoxContainer/Inspector/Sidebar"]
+[node name="StructureTree" type="Tree" parent="MarginContainer/VBoxContainer/Inspector/Sidebar"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.117647)
-
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer/Inspector/Sidebar"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Inspector/Sidebar/CenterContainer"]
-layout_mode = 2
-text = "Sidebar"
 
 [node name="Main" type="Control" parent="MarginContainer/VBoxContainer/Inspector"]
 custom_minimum_size = Vector2(300, 2.08165e-12)
@@ -98,17 +86,14 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.117647)
 
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer/Inspector/Main"]
+[node name="MainVbox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Inspector/Main"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Inspector/Main/CenterContainer"]
-layout_mode = 2
-text = "The almighty Horadric plugin!"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/Header/SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/Header/ReloadButton" to="." method="_on_reload_button_pressed"]

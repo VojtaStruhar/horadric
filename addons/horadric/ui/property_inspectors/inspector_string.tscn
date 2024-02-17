@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bmis8qv2kml3o"]
+
+[node name="inspector_string" type="HBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Property name"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
